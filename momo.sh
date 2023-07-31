@@ -28,6 +28,7 @@ echo "1. Check Account Balance"
 echo "2. Make Payment"
 echo "3. Transfer money to wallet"
 echo "4. Trnsfer money to Bank Account"
+echo "5. Transfer money to Crypto Account"
 read option
 
 case $option in
@@ -48,7 +49,7 @@ case $option in
     echo "Enter amount"
     read amount1
     make_payment $recipient1 $amount1 
-    echo "Invalid option. Exiting."
+    echo "Option does not exist. Exiting."
     ;; 
   *)
 esac
